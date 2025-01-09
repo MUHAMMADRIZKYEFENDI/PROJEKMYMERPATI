@@ -1,4 +1,7 @@
-# 312130252-muhammad rizky efendi-ecommerce merpati
+
+# NAMA    :MUHAMMAD RIZKY EFENDI
+# NIM     :312130252
+# PROJEK  :ecommerce merpati
 # strory board
 ![image](https://github.com/user-attachments/assets/e44b13c6-f4fd-4155-8c6b-7e2311b44da9)
 ![image](https://github.com/user-attachments/assets/092600b9-c436-4313-ab00-46d61c7d9ac1)
