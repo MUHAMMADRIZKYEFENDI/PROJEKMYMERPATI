@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jual_merpati"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_background"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="8dp"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColorHint="#616161"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintWidth_percent="0.9"
+            tools:ignore="VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/search"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:baselineAligned="false">
+
+                    <!-- ImageView dan TextView untuk Coklat -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:src="@drawable/coklat"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/coklatt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coklat"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <!-- ImageView dan TextView untuk Klabu -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/klabuu"
+                            tools:ignore="ImageContrastCheck"
+                            android:contentDescription="@string/klabuu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/klabu"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <!-- ImageView dan TextView untuk Megan -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:src="@drawable/megan"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/megan1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/megan"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Promotions -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/promosi"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/purpel"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tritis"
+                        tools:ignore="ImageContrastCheck"
+                        android:contentDescription="@string/promosi_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/merpati_juara_harga_bersahabat"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/rp_1_000_000"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/green"
+                        android:padding="8dp"
+                        android:text="@string/beli2"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:baselineAligned="false">
+
+                    <!-- Additional Pigeons -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/purpel"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/gendongcoklat"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="@string/gendong_coklat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rp_200_0000"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/beli1"
+                            android:backgroundTint="@color/green"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:padding="8dp"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/purpel"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/putih"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="@string/putih" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rp_200_000"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <Button
+                            android:id="@+id/buyButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/beli"
+                            android:backgroundTint="@color/green"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:padding="8dp"
+                            android:layout_gravity="center_horizontal"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <LinearLayout
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/purpel"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/home"
+                android:contentDescription="@string/home" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/cart"
+                android:contentDescription="@string/cart" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/search"
+                android:contentDescription="@string/searchh" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/person"
+                android:contentDescription="@string/person" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

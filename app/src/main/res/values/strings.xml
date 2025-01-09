@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Mymerpati</string>
+    <string name="pigeon">PIGEON</string>
+    <string name="started">STARTED</string>
+    <string name="todo1">TODO</string>
+    <string name="jual_merpati">JUAL MERPATI</string>
+    <string name="search">Search</string>
+    <string name="beli">Beli</string>
+    <string name="rp_200_000">Rp 200.000</string>
+    <string name="megan">Megan</string>
+    <string name="rp_1_000_000">Rp 1.000.000</string>
+    <string name="merpati_juara_harga_bersahabat">Merpati Juara, Harga Bersahabat</string>
+    <string name="promosi">Promosi</string>
+    <string name="beli1">Beli</string>
+    <string name="rp_200_0000">Rp 200.000</string>
+    <string name="beli2">Beli</string>
+    <string name="klabu">Klabu</string>
+    <string name="coklat">Coklat</string>
+    <string name="person">Person</string>
+    <string name="searchh">Search</string>
+    <string name="cart">Cart</string>
+    <string name="home">Home</string>
+    <string name="putih">Putih</string>
+    <string name="gendong_coklat">Gendong Coklat</string>
+    <string name="promosi_image">Promosi Image</string>
+    <string name="megan1">Megan</string>
+    <string name="klabuu">Klabu</string>
+    <string name="coklatt">Coklat</string>
+    <string name="merpati_warna_putih">merpati_warna_putih</string>
+    <string name="merpati_warna_putihh">MERPATI WARNA PUTIH</string>
+    <string name="checkout">CHECKOUT</string>
+</resources>
